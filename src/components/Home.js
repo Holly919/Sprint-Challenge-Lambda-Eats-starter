@@ -1,15 +1,17 @@
-  
 import React from "react";
- import { BrowserRouter, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-function Home() {
+
+export default function Home() {
+
+
+
     return (
-      <div className="home">
+      <div className="home-wrapper">
         
-        <h1>Code Fuel Pizza</h1>
-       
+        <Link to="/pizza">
+          <button className="build-button">Build Your Pizza!</button>
+        </Link>
       </div>
     );
-  }
-  
-  export default Home;
+}
